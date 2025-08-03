@@ -9,8 +9,6 @@ void Book::print() const {
     std::cout << "ASIN: " << asin << "\n";
     std::cout << "Title: " << title << "\n";
     std::cout << "Author: " << author << "\n";
-    std::cout << "Genre: " << genre << "\n";
-    std::cout << "Year: " << year << "\n";
     std::cout << "Price: $" << price << "\n";
     std::cout << "Stars: " << stars << " (" << reviews << " reviews)\n";
     std::cout << "Category: " << category_name << "\n";
