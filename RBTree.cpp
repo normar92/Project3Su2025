@@ -1,6 +1,8 @@
 
 
 #include "RBTree.h"
+#include <iostream>
+#include <algorithm>
 using namespace std;
 
 void RBTree::initializeNil() {
@@ -92,9 +94,15 @@ void RBTree::searchHelper(Node* node, const string& keyword, vector<Book>& books
     if (node == _nil)
         return;
     else {
+        string keywordLowercase = keyword;
+        transform(keywordLowercase.begin(), keywordLowercase.end(), keywordLowercase.begin(), ::tolower);
+
         searchHelper(node->left, keyword, books);
 
-        if (node->data.title.find(keyword) != string::npos)
+        string titleLowercase = node->data.title;
+        transform(titleLowercase.begin(), titleLowercase.end(), titleLowercase.begin(), ::tolower);
+
+        if (titleLowercase.find(keywordLowercase) != string::npos)
             books.push_back(node->data);
 
         searchHelper(node->right, keyword, books);
@@ -133,11 +141,11 @@ void RBTree::setSort(const int& key) {
         };
     } else if (key == 3) {
         comparator = [](const Book& a, const Book& b) {
-            return a.genre < b.genre;
+            return a.category_name < b.category_name;
         };
     } else if (key == 4) {
         comparator = [](const Book& a, const Book& b) {
-            return a.year < b.year;
+            return a.publishedDate < b.publishedDate;
         };
     }
 
@@ -205,6 +213,8 @@ void RBTree::insert(const Book& book) {
 }
 
 void RBTree::inOrder() const {
+    if (_root == _nil)
+        cout << "No books found." << endl;
     inOrderHelper(_root);
 }
 
