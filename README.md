@@ -21,7 +21,7 @@ This project implements 3 search and sorting algorithms using hash tbales and a 
 ## Usage:
 - Clone the repository:
   ```bash
-  git clone [https://github.com/normar92/Project3Su2025](https://github.com/normar92/Project3Su2025.git)
+  git clone https://github.com/normar92/Project3Su2025
   ```
 - Compile and run `main.cpp` to perform sorting operations.
 - Select Options
