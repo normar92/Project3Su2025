@@ -23,6 +23,8 @@ This project implements 3 search and sorting algorithms using hash tbales and a 
   ```bash
   git clone https://github.com/normar92/Project3Su2025
   ```
+- !!! DUE TO THE FILE SIZE IT WOULD NOT ALLOW US TO UPLOAD THE RAW FILE!!!
+- Please download the raw file (either thru the link or the "archive.zip" folder in the repo) and add to the directory before running the profile!! 
 - Compile and run `main.cpp` to perform sorting operations.
 - Select Options
 - If using Option 1 - enter one of the following ASIN keys:
