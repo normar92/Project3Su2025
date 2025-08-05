@@ -1,37 +1,50 @@
-# Project3Su2025
-DSA Project 3
-/*
-Team Name - Project 3 Group 3
-● Team Members - Norma Marin, Vincent Zvolsky, Illia Karbivnychyi
-● Project Title - Project 3 - Group 3 Library
-1. Problem: We are trying to solve the problem of people being unable to
-filter through large collections of books.
-2. Motivation: Often, large amounts of books are compiled into datasets
-that are impractical and inefficient for people to browse through.
-3. Features: Features will include search/drop down menus to filter/sort by
-numerous categories (key word, genre, year, etc.). Button to switch
-between data structures. We know that we have solved the problem
-when we have a program that allows non-tech-savvy users to easily and
-efficiently traverse a large library of books.
-4. Data: Books
--https://www.kaggle.com/datasets/asaniczka/amazon-kindle-books-datas
-et-2023-130k-books
-5. Tools: We will be using C++, github, maybe a PowerBI, and Excel tool to
-organize and cleanse the data.
-6. Visuals:
-7. Strategy: We will use 2 data structures, a hash table and a red-black
-tree, to store book information and allow the user to filter/sort by fields
-such as title, author, genre, year released, and possibly more.
-Preliminary data structures and algorithms include: class to store book
-objects, sort and search algorithms
-8. Distribution of Responsibility and Roles:
-● Norma will be coding the Hash Table and shrink the dataset to the
-100k suggested record count.
-● Vincent will be coding the Red-Black tree and its functions.
-● Illia will be parsing the input and building the UI.
-● References
-https://www.kaggle.com/datasets/asaniczka/amazon-kindle-books-dataset-2023-130
-k-books
+# Project3Su2025 Amazon Kindle Books
 
+This project implements 3 search and sorting algorithms using hash tbales and a red/black tree to the Amazon Kindle Book dataset. The dataset contains book details of asin,	title,	author, soldBy, imgUrl, productURL, stars,	reviews,	price,	isKindleUnlimited,	category_id,	isBestSeller, isEditorsPick,	isGoodReadsChoice,	publishedDate	and category_name. 
 
-*/
+## Features:
+1. Search by ASIN (Hash Table)
+2. Search by Title (Hash Table, partial match)
+3. Search by Author (Hash Table, partial match)
+4. Keyword search (RBTree - title only)
+5. Print all books (RBTree, sorted)
+6. Change sorting order (RBTree)
+
+## Sorting Algorithms Implemented:
+- **Timer and Red/Black Tree (Vincent Zvolsky**  
+- **Hash Table Sort and UI (Norma Marin)**
+
+## Data:
+- Source: https://www.kaggle.com/datasets/asaniczka/amazon-kindle-books-dataset-2023-130k-books
+- Includes book details for Amazon Kindle Books
+
+## Usage:
+- Clone the repository:
+  ```bash
+  git clone https://github.com/normar92/Project3Su2025
+  ```
+- Compile and run `main.cpp` to perform sorting operations.
+- Select Options
+- If using Option 1 - enter one of the following ASIN keys:
+          B00AEBEQUK
+          B0BN5742KY
+          B098PXH8CK
+          B087D5YQXB
+          B00AN2JPNI
+          B0B69SQNJY
+          B07FZPTDJ3
+          B0BN4RB7L9
+          B0BNWSS8H3
+          B0B3Y8QQ6R
+  - Options 2-6 can use any type of key word and name. 
+
+## Tools & Libraries:
+- **Languages:** C++ 
+- **Applications:** Excel, Clion
+
+## Results:
+- Outputs include sorted CSV files, results in searching keywords or ASIN keys. 
+
+## Contributors:
+- Vincent Zvolsky ([vincentzvo](https://github.com/vincentzvo))
+- Norma Marin ([normar92](https://github.com/normar92))
