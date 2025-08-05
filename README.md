@@ -11,7 +11,7 @@ This project implements 3 search and sorting algorithms using hash tbales and a 
 6. Change sorting order (RBTree)
 
 ## Sorting Algorithms Implemented:
-- **Timer and Red/Black Tree (Vincent Zvolsky**  
+- **Timer and Red/Black Tree (Vincent Zvolsky)**  
 - **Hash Table Sort and UI (Norma Marin)**
 
 ## Data:
